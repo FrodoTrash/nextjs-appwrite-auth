@@ -1,3 +1,4 @@
+SSR with Server Components
 ```.env
 NEXT_PUBLIC_APPWRITE_ENDPOINT=
 NEXT_PUBLIC_APPWRITE_PROJECT_ID=
@@ -7,3 +8,6 @@ NEXT_PUBLIC_COOKIE_NAME=
 
 APPWRITE_API_KEY=
 ```
+react-query
+react-hook-forms
+zod
