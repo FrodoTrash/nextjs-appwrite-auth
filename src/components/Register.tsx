@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { signUp } from "@/lib/auth-actions"; // Assuming this is your server action for sign-up
+import { signUp } from "@/lib/actions-auth"; // Assuming this is your server action for sign-up
 
 // Define the Zod schema for validation, including a username and password confirmation check.
 const registerSchema = z

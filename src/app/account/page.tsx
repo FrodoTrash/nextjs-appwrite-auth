@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
-import { getCurrentUser } from "@/lib/auth-actions";
-import AccountClientPage from "@/components/Account";
+import { getCurrentUser } from "@/lib/actions-auth";
+// import AccountClientPage from "@/components/Account";
+import AccountClientPage from "@/components/AccountWithTabs";
 
 // This is a Server Component, so there is no "use client" directive.
 // It runs entirely on the server.

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { signIn } from "@/lib/auth-actions";
+import { signIn } from "@/lib/actions-auth";
 
 // 1. Define the Zod schema for validation
 const loginSchema = z.object({

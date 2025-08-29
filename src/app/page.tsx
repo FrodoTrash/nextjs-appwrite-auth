@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { getCurrentUser } from "@/lib/auth-actions";
+import { getCurrentUser } from "@/lib/actions-auth";
 import Link from "next/link";
 import { User, LogIn, UserPlus } from "lucide-react";
 

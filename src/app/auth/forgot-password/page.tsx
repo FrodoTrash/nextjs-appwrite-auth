@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { getCurrentUser } from "@/lib/auth-actions";
+import { getCurrentUser } from "@/lib/actions-auth";
 import ForgotPasswordClientPage from "@/components/ForgotPassword";
 
 // The server component acts as a gatekeeper.

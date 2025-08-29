@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { resetPassword } from "@/lib/auth-actions";
+import { resetPassword } from "@/lib/actions-auth";
 
 type ResetPasswordClientPageProps = {
   secret: string;

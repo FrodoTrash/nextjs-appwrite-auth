@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { getCurrentUser } from "@/lib/auth-actions"; // Assuming this function gets the user on the server
+import { getCurrentUser } from "@/lib/actions-auth"; // Assuming this function gets the user on the server
 import LoginClientPage from "@/components/Login";
 
 // This is a Server Component that runs on the server.

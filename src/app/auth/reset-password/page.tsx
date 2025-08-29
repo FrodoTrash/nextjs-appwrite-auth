@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { getCurrentUser } from "@/lib/auth-actions";
+import { getCurrentUser } from "@/lib/actions-auth";
 import ResetPasswordClientPage from "@/components/ResetPassword";
 
 type ResetPasswordPageProps = {

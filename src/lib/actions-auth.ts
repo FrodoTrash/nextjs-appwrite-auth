@@ -88,7 +88,7 @@ export async function signOut() {
     console.error("Error during sign out:", error);
   }
 
-  redirect("/login");
+  redirect("/");
 }
 
 export async function getCurrentUser() {
@@ -131,6 +131,32 @@ export async function resetPassword(
       password,
       secret,
       userId,
+    });
+
+    return { success: true };
+  } catch (error: any) {
+    return { success: false, error: error.message };
+  }
+}
+
+export async function changePassword(oldPassword: string, newPassword: string) {
+  try {
+    const { account } = await createSessionClient();
+
+    await account.updatePassword({ password: newPassword, oldPassword });
+    return { success: true };
+  } catch (error: any) {
+    return { success: false, error: error.message };
+  }
+}
+
+export async function changeEmail(newEmail: string, password: string) {
+  try {
+    const { account } = await createSessionClient();
+
+    await account.updateEmail({
+      email: newEmail,
+      password,
     });
 
     return { success: true };

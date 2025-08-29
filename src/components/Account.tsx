@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useQuery, useMutation } from "@tanstack/react-query";
-import { signOut } from "@/lib/auth-actions";
+import { signOut } from "@/lib/actions-auth";
 import { User, LogOut } from "lucide-react";
 
 // A simple loading skeleton component
