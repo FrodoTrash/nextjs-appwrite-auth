@@ -8,6 +8,6 @@ NEXT_PUBLIC_COOKIE_NAME=
 
 APPWRITE_API_KEY=
 ```
-react-query
-react-hook-forms
-zod
+- react-query
+- react-hook-forms
+- zod
